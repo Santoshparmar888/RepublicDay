@@ -1,0 +1,109 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f6f9fb;
+  color: #121212;
+  line-height: 1.6;
+}
+
+header {
+  background: linear-gradient(90deg, #ff9933, white, #138808);
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  border-bottom: 5px solid #ff9933;
+}
+
+section {
+  padding: 20px;
+  max-width: 800px;
+  margin: auto;
+}
+
+h1 {
+  text-align: center;
+  
+  margin-bottom: 20px;
+  color: linear-gradient(90deg, #ff9933, white, #138808);
+}
+
+/* Line base style */
+.line {
+  background: wh;
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 6px;
+  border: 2px solid transparent;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+/* Animation delay per line */
+.line:nth-child(2) { animation-delay: 0.3s; }
+.line:nth-child(3) { animation-delay: 0.6s; }
+.line:nth-child(4) { animation-delay: 0.9s; }
+.line:nth-child(5) { animation-delay: 1.2s; }
+.line:nth-child(6) { animation-delay: 1.5s; }
+.line:nth-child(7) { animation-delay: 1.8s; }
+.line:nth-child(8) { animation-delay: 2.1s; }
+.line:nth-child(9) { animation-delay: 2.3s; }
+
+/* Animation effect */
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    border-image: linear-gradient(90deg, #ff9933, white, #138808) 1;
+    border-width: 2px;
+    border-style: solid;
+  }
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  background: linear-gradient(90deg, #ff9933, white, #138808);
+  margin-top: 30px;
+  font-size: 14px;
+}
+
+div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+}
+
+a{
+  text-decoration: none;
+  size: 40px;
+}
+
+/* ===== FIXED BACKGROUND VIDEO ===== */
+#bgVideo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -10;
+  background: black;
+}
+
+/* Scrollable page */
+.page {
+  position: relative;
+  z-index: 1;
+}
+
+/* Content sections */
+.content {
+  min-height: 100vh;          /* हर section full screen */
+  color: white;
+  text-align: center;
+  padding-top: 200px;
+  font-size: 24px;
+}

@@ -1,0 +1,145 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  height: 100%;
+ 
+}
+
+body p {
+  font-family:
+    'Noto Sans Devanagari',
+    'Hind',
+    'Poppins',
+    Arial,
+    sans-serif;
+    font-weight: bold;
+}
+
+
+
+/* Header */
+header {
+  background: linear-gradient(90deg, #ff9933, white, #138808);
+  text-align: center;
+  padding: 15px;
+}
+
+/* Navbar */
+.navbar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 10px 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+}
+
+#search {
+  margin-top: 10px;
+  padding: 10px;
+  width: 90%;
+  max-width: 400px;
+  border-radius: 20px;
+  border: none;
+}
+
+/* Container */
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 15px;
+  flex: 1;
+}
+
+/* Krantikari Card */
+.krantikari {
+  margin-bottom: 15px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+}
+
+/* Card header */
+.card {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 10px 15px;
+  background: linear-gradient(90deg, #ff9933, white, #138808);
+  
+}
+
+.card img {
+  width: 60px;
+  height: 80px;
+  object-fit: cover;
+  margin-right: 15px;
+  border-radius: 6px;
+}
+
+.card h2 {
+  margin: 0;
+  font-size: 16px;
+}
+
+/* Content */
+.content {
+  display: none;
+  padding: 15px;
+  background: rgba(224,141 , 68, 0.486);
+  line-height: 1.8;
+}
+
+/* Footer */
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  background: linear-gradient(90deg, #ff9933, white, #138808);
+  text-align: center;
+  padding: 12px;
+}
+
+/* Reset */
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+
+/* ===== FIXED BACKGROUND VIDEO ===== */
+#bgVideo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -10;
+  background: black;
+}
+
+/* Scrollable page */
+.page {
+  position: relative;
+  z-index: 1;
+}
+
+/* Content sections */
+.content {
+  min-height: 100vh;          /* हर section full screen */
+  text-align: center;
+  color: white;
+  padding-top: 200px;
+  font-size: 24px;
+}
