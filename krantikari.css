@@ -1,11 +1,16 @@
+/* ===== RESET ===== */
+* {
+  box-sizing: border-box;
+}
+
 html, body {
   margin: 0;
   padding: 0;
+  min-height: 100%;
   font-family: sans-serif;
-  height: 100%;
- 
 }
 
+/* ===== TEXT FONT ===== */
 body p {
   font-family:
     'Noto Sans Devanagari',
@@ -13,111 +18,11 @@ body p {
     'Poppins',
     Arial,
     sans-serif;
-    font-weight: bold;
+  font-weight: 600;
+  line-height: 1.7;
 }
 
-
-
-/* Header */
-header {
-  background: linear-gradient(90deg, #ff9933, white, #138808);
-  text-align: center;
-  padding: 15px;
-}
-
-/* Navbar */
-.navbar ul {
-  list-style: none;
-  padding: 0;
-  margin: 0 0 10px 0;
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-}
-
-.navbar ul li a {
-  text-decoration: none;
-  color: #000;
-  font-weight: bold;
-}
-
-#search {
-  margin-top: 10px;
-  padding: 10px;
-  width: 90%;
-  max-width: 400px;
-  border-radius: 20px;
-  border: none;
-}
-
-/* Container */
-.container {
-  max-width: 900px;
-  margin: auto;
-  padding: 15px;
-  flex: 1;
-}
-
-/* Krantikari Card */
-.krantikari {
-  margin-bottom: 15px;
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.15);
-}
-
-/* Card header */
-.card {
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-  padding: 10px 15px;
-  background: linear-gradient(90deg, #ff9933, white, #138808);
-  
-}
-
-.card img {
-  width: 60px;
-  height: 80px;
-  object-fit: cover;
-  margin-right: 15px;
-  border-radius: 6px;
-}
-
-.card h2 {
-  margin: 0;
-  font-size: 16px;
-}
-
-/* Content */
-.content {
-  display: none;
-  padding: 15px;
-  background: rgba(224,141 , 68, 0.486);
-  line-height: 1.8;
-}
-
-/* Footer */
-footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  text-align: center;
-  padding: 10px;
-  background: linear-gradient(90deg, #ff9933, white, #138808);
-  text-align: center;
-  padding: 12px;
-}
-
-/* Reset */
-html, body {
-  margin: 0;
-  padding: 0;
-}
-
-
-/* ===== FIXED BACKGROUND VIDEO ===== */
+/* ===== BACKGROUND VIDEO ===== */
 #bgVideo {
   position: fixed;
   top: 0;
@@ -129,9 +34,124 @@ html, body {
   background: black;
 }
 
-/* Scrollable page */
-.page {
-  position: relative;
-  z-index: 1;
+/* ===== HEADER ===== */
+header {
+  background: linear-gradient(90deg, #ff9933, #ffffff, #138808);
+  text-align: center;
+  padding: 14px 10px;
 }
 
+header h1 {
+  margin: 10px 0;
+  font-size: 22px;
+}
+
+/* ===== NAVBAR ===== */
+.navbar ul {
+  list-style: none;
+  margin: 0 0 8px 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+/* ===== SEARCH ===== */
+#search {
+  margin-top: 8px;
+  padding: 9px 14px;
+  width: 90%;
+  max-width: 360px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+}
+
+/* ===== CONTAINER ===== */
+.container {
+  max-width: 900px;
+  margin: 20px auto 80px;
+  padding: 12px;
+}
+
+/* ===== KRANTIKARI CARD ===== */
+.krantikari {
+  margin-bottom: 14px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+}
+
+/* ===== CARD HEADER ===== */
+.card {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 10px 12px;
+  background: linear-gradient(90deg, #ff9933, #ffffff, #138808);
+}
+
+.card img {
+  width: 50px;
+  height: 65px;
+  object-fit: cover;
+  margin-right: 12px;
+  border-radius: 6px;
+}
+
+.card h2 {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+/* ===== CARD CONTENT ===== */
+.content {
+  display: none;
+  padding: 12px;
+  background: rgba(224, 141, 68, 0.5);
+  font-size: 14px;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  background: linear-gradient(90deg, #ff9933, #ffffff, #138808);
+  font-size: 13px;
+}
+
+/* ===== MOBILE OPTIMIZATION ===== */
+@media (max-width: 600px) {
+
+  header h1 {
+    font-size: 18px;
+  }
+
+  .navbar ul li a {
+    font-size: 13px;
+  }
+
+  .card img {
+    width: 45px;
+    height: 60px;
+  }
+
+  .card h2 {
+    font-size: 14px;
+  }
+
+  body p {
+    font-size: 13px;
+  }
+  }
